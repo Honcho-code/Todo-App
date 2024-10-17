@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+}
+body{
+    background-color: rgb(0, 81, 255);
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px 30px;
+}
+.container h1{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 800;
+    color: rgb(0, 81, 255);
+    padding-bottom: 20px;
+}
+.task-form{
+    display: flex;
+    gap: 10px;
+}
+.task-form input{
+    padding: 10px 15px;
+    border: 1px solid gray;
+    outline: rgb(0, 81, 255);
+    font-size: 16px;
+    font-weight: 600;
+}
+.task-form input:focus{
+    border: 1px solid rgb(0, 81, 255);
+}
+.task-form button{
+    padding: 10px 15px;
+    border: none;
+    background-color: rgb(0, 81, 255);
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+.task-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.445);
+    margin-top: 10px;
+}
+.task-list li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+.task-list button{
+    background-color: red;
+    color: white;
+    padding: 5px 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+@media (max-width: 800px) {
+    .task-form{
+        display: block;
+        gap: 10px;
+    }
+    .task-form input{
+        display: block;
+        width: 300px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .task-form button{
+        width: 100%;
+        display: block;
+    }
+}
